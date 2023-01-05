@@ -1,0 +1,16 @@
+{
+  
+    "name": "Algo Solver",
+    "version": "1",
+    "manifest_version": 3,
+    "description": "Will give u a solution using Chat GPT AI for the  current algorithm question you are on",
+    "content_scripts": [{
+        "js": ["scripts/content.js"],
+        "matches": ["*://*/*"],
+        "all_frames": true
+    }],
+    "web_accessible_resources": [{
+        "resources": ["frame.html"],
+        "matches": ["<all_urls>"]
+    }]
+} 
